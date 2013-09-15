@@ -83,28 +83,24 @@
                 interesting project, why not say hello? 
             </p>
             
-            <form id="contact-form" class="checkform" action="send.php" method="post" target="/_ah/email" method="post">
+            <form id="contact-form" class="checkform" action="send.php" method="post" data-validate="parsley">
                     <div>	
-                    <label for="name" class="req">Name *</label>
-                    <div class="controls"><input type="text" name="name" class="inputbox" placeholder="Type your name here"/></div>
+                    <label for="name" class="req">Name</label>
+                    <div class="controls"><input type="text" name="name" class="inputbox" placeholder="Type your name here" data-trigger="change" data-required="true"/></div>
                     </div>
                     
                     <div>	
-                    <label for="email" class="req">E-mail *</label>
-                    <div class="controls"><input type="text" name="email" class="inputbox" placeholder="Your e-mail address"/></div>
+                    <label for="email" class="req">E-mail</label>
+                    <div class="controls"><input type="email" name="email" class="inputbox" placeholder="Your e-mail address" data-trigger="change" data-required="true"/></div>
                     </div> 
                           
                     <div>	
-                    <label for="message" class="req msg" >Message *</label>
-                    <div class="controls"><textarea name="message" class="inputbox" placeholder="Your message" rows="15" cols="50"></textarea></div>
+                    <label for="message" class="req msg" >Message</label>
+                    <div class="controls"><textarea name="message" class="inputbox" placeholder="Your message" rows="15" cols="50" data-trigger="change" data-required="true"></textarea></div>
                     </div>
                     
-                    <div><button class="btn" type="submit" value="Send" name="submit_form">Send</button>
+                    <div><button class="btn" type="submit" value="Send" name="submit_form" id="send_button">Send</button>
                     </div>
-                    
-                    <input type="hidden" name="fields" value="name,email,message" />
-                    <input type="hidden" name="sendto" value="hello@enzesolution.com" />
-                    <input type="hidden" name="subject" value="Custom Subject" />
             </form>
         </div>
     </footer>
@@ -119,6 +115,10 @@
   			ga('create', 'UA-18479197-4', 'enzesolution.com');
   			ga('send', 'pageview');
 		</script>
+
+    <script type="text/javascript" src="javascripts/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/parsley.js"></script>
+    <script type="text/javascript" src="javascripts/main.js"></script>
        
 </body>
 </html>
