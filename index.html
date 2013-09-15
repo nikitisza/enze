@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>enze - Design - Web Development</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png"/>
+    <meta name="description" content="Enze is a small team of makers based in Dublin, Ireland that focuses on bringing sustainable products to life.">
+
+    <!-- Meta -->
+    <link rel="logo shortcut icon" type="image/png" href="images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="enze">
+    <meta property="og:url" content="http://www.enzesolution.com/">
+    <meta name="google-site-verification" content="T16XAO8u0LjDXI3TdejBFJ0uEO2MhL-otwjSnZSfyhs" />
+
+    <!-- Styles -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+    </header>
+
+    <!-- Intro -->
+    <section id="intro" class="primary blue">
+        <div class="wrap">
+            <div id="branding">
+                <img src="images/logo.png" alt="enze">
+            </div>
+            <h2>We make simple and wonderful things for the world.</h2>
+
+            <div class="divider"></div>
+            <p>
+                We are a small team of a designer and a developer based in Dublin, Ireland that focuses on bringing
+                sustainable products to life. We love what we do.
+            </p>
+        </div>
+    </section>
+
+    
+    <!-- About -->
+    <section id="about" class="white">
+        <div class="wrap">
+            <h2>About enze</h2>
+
+            <p>
+                Everything we make possesses the qualities we want and
+                expect of the world. We always stay true to ourselves and what we stand for. We are always
+                changing and evolving, but we are always holding on to the good.
+
+
+            </p>
+
+            <div id="profiles">
+                <div class="profile column first">
+                    <img src="images/niki_tisza_enze.png" alt="Niki Tisza">
+                    <h3>Niki</h3>
+                    <a href="http://twitter.com/nikitisza" target="_blank" class="twitter">Follow @nikitisza</a>
+                </div>
+
+                <div class="profile column last">
+                    <img src="images/zoltan_debre_enze.png" alt="Zoltan Debre">
+                    <h3>Zoltan</h3>
+                    <a href="http://twitter.com/szines" target="_blank" class="twitter">Follow @szines</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap">
+            <ul>
+                <li class="facebook"><a href="https://www.facebook.com/enzesolution" target="_blank">Facebook</a></li>
+                <li class="linkedin"><a href="http://www.linkedin.com/company/enze" target="_blank">LinkedIn</a></li>
+            </ul>
+
+            <p class="contract">
+                We work with other companies to bring their products to life. Our skills is UX/UI Design, Software development,
+                 Branding, Web design, App design and development. If you have an
+                interesting project, why not say hello? 
+            </p>
+            
+            <form id="contact-form" class="checkform" action="send.php" method="post" target="/_ah/email" method="post">
+                    <div>	
+                    <label for="name" class="req">Name *</label>
+                    <div class="controls"><input type="text" name="name" class="inputbox" placeholder="Type your name here"/></div>
+                    </div>
+                    
+                    <div>	
+                    <label for="email" class="req">E-mail *</label>
+                    <div class="controls"><input type="text" name="email" class="inputbox" placeholder="Your e-mail address"/></div>
+                    </div> 
+                          
+                    <div>	
+                    <label for="message" class="req msg" >Message *</label>
+                    <div class="controls"><textarea name="message" class="inputbox" placeholder="Your message" rows="15" cols="50"></textarea></div>
+                    </div>
+                    
+                    <div><button class="btn" type="submit" value="Send" name="submit_form">Send</button>
+                    </div>
+                    
+                    <input type="hidden" name="fields" value="name,email,message" />
+                    <input type="hidden" name="sendto" value="hello@enzesolution.com" />
+                    <input type="hidden" name="subject" value="Custom Subject" />
+            </form>
+        </div>
+    </footer>
+
+    <!-- Google Analytics -->
+        <script>
+  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  			ga('create', 'UA-18479197-4', 'enzesolution.com');
+  			ga('send', 'pageview');
+		</script>
+       
+</body>
+</html>
+
