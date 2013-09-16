@@ -1,5 +1,6 @@
 var sendEmail = function(event) {
     event.preventDefault();
+    $.get('send.php');
 
 }
 
