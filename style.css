@@ -168,11 +168,11 @@ section {
   margin: 50px 0;
 }
 
-.profile.first {
+.profile .first {
   padding-left: 100px;
 }
 
-.profile.last {
+.profile .last {
   padding-right: 100px;
 }
 
@@ -339,3 +339,28 @@ input:required:invalid, input:focus:invalid {
     font-family: "Roboto";
     font-size: 14px;
 }
+
+@media only screen and (max-width: 1180px) {
+
+    #profiles {
+        width: 300px;
+        margin: 0px auto;
+    }
+
+    .column {
+        display: block;
+        width: 300px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .last {
+        padding-right: 0px;
+        margin-top: 50px;
+    }
+}
+
+
+
+
+
