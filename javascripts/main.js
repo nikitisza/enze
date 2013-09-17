@@ -23,7 +23,7 @@ var sendEmail = function(event)
     }
 
     var request = $.ajax({
-        url: 'http://100pcarabica.com/send.php',
+        url: 'send.php',
         type: 'post',
         data: fullmessage,
         dataType: 'json'
